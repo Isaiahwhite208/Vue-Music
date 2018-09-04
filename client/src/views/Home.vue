@@ -26,7 +26,7 @@
                     <p>Album: {{song.collectionName}}</p>
                   </div>
                   <div class="row card">
-                    <audio controls :src=song.previewUrl type="audio/mpeg" @play="pauseAll" />
+                    <audio controls :src=song.previewUrl type="audio" @play="pauseAll" />
                     <button class="button" @click="removeFromlist(song._id)">
                       Remove
                     </button>
@@ -50,7 +50,7 @@
                     <p>Album: {{song.collectionName}}</p>
                   </div>
                   <div class="row card">
-                    <audio controls :src=song.previewUrl type="audio/mpeg" @play="pauseAll" />
+                    <audio controls :src=song.previewUrl type="audio" @play="pauseAll" />
                     <button class="button" @click="addToPlaylist(song)">
                       Add
                     </button>
