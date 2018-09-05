@@ -110,7 +110,7 @@
 </script>
 <style>
   html {
-    background-color: #0b0b0d;
+    background-color: black;
   }
 
   .header {
