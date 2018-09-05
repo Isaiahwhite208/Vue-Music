@@ -18,7 +18,7 @@
           </div>
           <div class="scrollBar">
             <div class="column">
-              <div v-for="(song, index) in playlist" :key="index" class="musicTab">
+              <div v-for="(song, index) in playlist" class="musicTab">
                 <div class="row">
                   <div class="row card">
                     <p>Song: {{song.trackName}}</p>
@@ -42,7 +42,7 @@
           </div>
           <div class="scrollBar">
             <div class="column">
-              <div v-for="(song, index) in results" :key="index" class="musicTab">
+              <div v-for="(song, index) in results" class="musicTab">
                 <div class="row">
                   <div class="row card">
                     <p>Song: {{song.trackName}}</p>
@@ -103,14 +103,6 @@
       },
       removeFromlist(id) {
         this.$store.dispatch('removeFromlist', id)
-      },
-      pauseAll(e) {
-        var play = document.getElementsByTagName('audio');
-        for (var i = 0, len = play.length; i < len; i++) {
-          if (play[i] != e.target) {
-            play[i].pause();
-          }
-        }
       },
     }
   }
