@@ -20,12 +20,12 @@
             <div class="column">
               <div v-for="(song, index) in playlist" class="musicTab">
                 <div class="row">
-                  <div class="row card">
+                  <div class="card">
                     <p>Song: {{song.trackName}}</p>
                     <p>Artist: {{song.artistName}}</p>
                     <p>Album: {{song.collectionName}}</p>
                   </div>
-                  <div class="row card">
+                  <div class="card">
                     <audio controls :src=song.previewUrl type="audio" />
                     <button class="button" @click="removeFromPlaylist(song._id)">
                       Remove
@@ -44,12 +44,12 @@
             <div class="column">
               <div v-for="(song, index) in results" class="musicTab">
                 <div class="row">
-                  <div class="row card">
+                  <div class="card">
                     <p>Song: {{song.trackName}}</p>
                     <p>Artist: {{song.artistName}}</p>
                     <p>Album: {{song.collectionName}}</p>
                   </div>
-                  <div class="row card">
+                  <div class="card">
                     <audio controls :src=song.previewUrl type="audio" />
                     <button class="button" @click="addToPlaylist(song)">
                       Add
