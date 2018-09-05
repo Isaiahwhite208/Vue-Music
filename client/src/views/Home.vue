@@ -5,8 +5,8 @@
         Love Moi Music
       </div>
       <form @submit.prevent="getQuery($event)" class="row">
-        <input type="text" name="name" autocomplete="off" placeholder="Search"><br>
-        <button class="seachButton  " type="submit">Search</button>
+        <input type="text" name="name" placeholder="Search"><br>
+        <button class="seachButton" type="submit">Search</button>
       </form>
     </header>
 
