@@ -27,7 +27,7 @@
                   </div>
                   <div class="card">
                     <audio controls :src=song.previewUrl type="audio" />
-                    <button class="button" @click="removeFromPlaylist(song._id)">
+                    <button class="button" @click="removeFromPlaylist(song)">
                       Remove
                     </button>
                   </div>
