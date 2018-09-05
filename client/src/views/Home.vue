@@ -128,9 +128,9 @@
 
   .listTitle {
     display: flex;
-    justify-content: flex-start;
-    width: 50vw;
     color: white;
+    width: 50vw;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
